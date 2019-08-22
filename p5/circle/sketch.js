@@ -6,6 +6,6 @@ function setup() {
 
 function draw() {
   // put drawing code here
-fill(204)
+fill(255,0,0)
 rect(mouseX, mouseY, 10, 10);
 }
