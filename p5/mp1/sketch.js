@@ -17,7 +17,9 @@ function draw() {
       fill('orange');
       ellipse(436, 218, 300, 300);
       fill('blue');
-      ellipse(377, 184, 40, 40)
+      ellipse(377, 184, 40, 40);
+      fill('blue');
+      ellipse(492, 174, 40, 40);
 
     }
 
