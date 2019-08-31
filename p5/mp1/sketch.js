@@ -39,8 +39,8 @@ function draw() {
       fill('#C0C0C0');
       ellipse(890, 65, 50, 50);
 
-      fill('00008b');
-      ellipse(889, 61, 50, 50);
+      fill('#00008b');
+      ellipse(902, 72, 50, 50);
 
 
 
@@ -52,6 +52,29 @@ function draw() {
 
       fill('#654321');
       rect(416, 368, 43, 199);
+
+      fill('black');
+      arc(368, 136, 50, 30, PI, TWO_PI);
+
+      fill('black');
+      arc(478, 130, 50, 30, PI, TWO_PI);
+
+      fill('#654321');
+      rect(341, 412, 199, 43);
+
+      fill('green');
+      ellipse(60, 488, 50, 170);
+
+      fill('green');
+      ellipse(128, 494, 50, 130);
+      fill('#006400');
+      ellipse(222, 493, 50, 170);
+      fill('green');
+      ellipse(648, 489, 50, 170);
+      fill('#006400');
+      ellipse(800, 483, 50, 190);
+      fill('green');
+      ellipse(966, 487, 50, 300);
 
     } else {
       fill('orange');
@@ -86,10 +109,34 @@ function draw() {
       fill('#654321');
       rect(416, 368, 43, 199);
 
+      fill('#654321');
+      rect(341, 412, 199, 43);
+
+      fill('black');
+      arc(376, 160, 50, 30, PI, TWO_PI);
+
+      fill('black');
+      arc(480, 156, 50, 30, PI, TWO_PI);
+
+      fill('green');
+      ellipse(60, 488, 50, 170);
+
+      fill('green');
+      ellipse(128, 494, 50, 130);
+      fill('green');
+      ellipse(222, 493, 50, 170);
+      fill('green');
+      ellipse(648, 489, 50, 170);
+      fill('green');
+      ellipse(800, 483, 50, 190);
+      fill('green');
+      ellipse(966, 487, 50, 300);
+
+
     }
 
     print(mouseIsPressed);{
 
-      console.log(mouseX + ',' + mouseY)
+      console.log(mouseX + ',' + mouseY);
     }
 }
