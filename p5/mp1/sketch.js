@@ -6,12 +6,13 @@ function setup() {
 function draw() {
   // put drawing code here
     background('#ADD8E6');
+    //background(random(255), random(255), random(255));
     fill(0);
 
     text(mouseX + ',' + mouseY, 20, 20);
     fill(255);
     if (mouseIsPressed) {
-      fill('#00008b')
+      fill(random(255), random(255), random(255));
       rect(0, 0, 1000, 500);
       fill('#FF6347');
       ellipse(436, 218, 300, 300);
@@ -20,8 +21,8 @@ function draw() {
       ellipse(377, 184, 50, 50);
       fill('black');
       ellipse(376, 182, 20, 20);
-
-
+      fill('white')
+      text("STICKMAN", 192, 200);
       fill('red');
       ellipse(482, 182, 50, 50);
 
