@@ -6,7 +6,7 @@ function setup() {
 function draw() {
   // put drawing code here
     background('#ADD8E6');
-    //background(random(255), random(255), random(255));
+    
     fill(0);
 
     text(mouseX + ',' + mouseY, 20, 20);
