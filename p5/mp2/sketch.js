@@ -96,7 +96,7 @@ function mouseReleased() {
   }
   //if (myState == 2) {
   //myState = 3;
-  //  }
+  // }
 
   //if (myState == 3) {
   //  myState = 4;
