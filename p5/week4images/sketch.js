@@ -7,5 +7,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
+  background("#ffcb08")
   image(bcow, 20, 100);
+  text('welcome atk', 40, 90);
 }
