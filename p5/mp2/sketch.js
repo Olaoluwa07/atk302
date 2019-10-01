@@ -113,3 +113,6 @@ function mouseReleased() {
   }
   console.log(mouseX + "," + mouseY);
 }
+function touchStarted() {
+  getAudioContext().resume();
+}
