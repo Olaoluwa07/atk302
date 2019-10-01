@@ -6,11 +6,15 @@ var city;
 let mic;
 let y = 337;
 var vol = 0;
+var bk;
+var gam
 
 
 function preload() {
   font = loadFont('asset/Heyaugust.otf');
   city = loadImage('asset/ola.jpg');
+  bk = loadImage('asset/bike.png');
+  gam = loadSound('asset/gamer.mp3')
 }
 
 function setup() {
@@ -35,8 +39,8 @@ function draw() {
       //image(city, 0, 0);
       fill(random(255), random(255), random(255));
       textFont(font); // SETS the font
-      textSize(79);
-      text("BEGIN", x, 200);
+      textSize(30);
+      text("Click to BEGIN", x, 200);
       x += 1;
       if (x > 700) {
         x = 0;
@@ -50,7 +54,7 @@ function draw() {
       //image(city, 0, 0);
       myTimer++;
       if (myTimer >= 10) {
-        myTimer = 0;
+        myTimer = 4;
         myState = 2;
 
       }
@@ -64,16 +68,21 @@ function draw() {
       if (vol >= 0.2) {
 
         myState = 3;
+        gam.play();
       }
-      ellipse(333, 337, 20, 20);
+      image(bk, 312, 270);
+      textSize(40);
+      text("Don't yell", 150, 200);
       break;
 
     case 3:
       //background(200);
-      ellipse(333, y, 20, 20);
+      image(bk, 312, y);
       y = y - 10;
       if (y <= 0) {
         myState = 4;
+        gam.stop();
+
       }
 
 
@@ -84,6 +93,7 @@ function draw() {
     case 4:
       textSize(79);
       text("GoodBye", 244, 171);
+      y = 337
 
       //  background("#ffcb08");
       break;
@@ -98,8 +108,8 @@ function mouseReleased() {
   //myState = 3;
   // }
 
-  //if (myState == 3) {
-  //  myState = 4;
-  //}
+  if (myState == 4) {
+    myState = 0;
+  }
   console.log(mouseX + "," + mouseY);
 }
