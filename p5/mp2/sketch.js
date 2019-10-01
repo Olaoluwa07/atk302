@@ -40,7 +40,7 @@ function draw() {
       fill(random(255), random(255), random(255));
       textFont(font); // SETS the font
       textSize(30);
-      text("Click to BEGIN", x, 200);
+      text("Click to Begin", x, 200);
       x += 1;
       if (x > 700) {
         x = 0;
