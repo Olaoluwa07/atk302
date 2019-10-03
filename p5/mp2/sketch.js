@@ -37,11 +37,16 @@ function draw() {
     case 0:
       //background("#ffcb08");
       //image(city, 0, 0);
+      fill("white");
+      textSize(20);
+      text("Sustainability to me is a quiet state until a shout changes things", 22, 80);
+
       fill(random(255), random(255), random(255));
       textFont(font); // SETS the font
       textSize(30);
+
       text("Click to Begin", x, 200);
-      x += 1;
+      x += 5;
       if (x > 700) {
         x = 0;
       }
@@ -111,6 +116,7 @@ function mouseReleased() {
   if (myState == 4) {
     myState = 0;
   }
+
   console.log(mouseX + "," + mouseY);
 }
 function touchStarted() {
