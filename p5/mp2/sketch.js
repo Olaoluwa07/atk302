@@ -22,7 +22,7 @@ function setup() {
   createCanvas(700, 400);
 
   mic = new p5.AudioIn();
-
+textFont(font); // SETS the font
   // start the Audio Input.
   // By default, it does not .connect() (to the computer speakers)
   mic.start();
@@ -39,14 +39,14 @@ function draw() {
       //image(city, 0, 0);
       fill("white");
       textSize(20);
-      text("Sustainability to me is a quiet state until a shout changes things", 22, 80);
+
 
       fill(random(255), random(255), random(255));
-      textFont(font); // SETS the font
+
       textSize(30);
 
       text("Click to Begin", x, 200);
-      x += 5;
+      x += 3;
       if (x > 700) {
         x = 0;
       }
