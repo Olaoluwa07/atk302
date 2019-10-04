@@ -77,7 +77,7 @@ function draw() {
       }
       image(bk, 312, 270);
       textSize(40);
-      text("Don't yell", 150, 200);
+      text("Don't Yell", 150, 200);
       break;
 
     case 3:
