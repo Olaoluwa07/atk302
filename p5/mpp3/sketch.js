@@ -71,7 +71,7 @@ function draw() {
       image(sad, width/2, height/2);
       textFont(myFont);  // SETS the font
       textSize(100);
-      text("LOOSE", 300, 200);
+      text("LOSE", 300, 200);
       break;
 
     case 3:
