@@ -25,14 +25,15 @@ function draw() {
   background(100);
   xPosition = map(gamma, -60, 60, 0, width);
   yPosition = map(beta, -30, 30, 0, height);
-
+  frogPos.x = xPosition;
+  frogPos.y = yPosition;
   push(); // before you use translate, rotate, or scale commands, push and then pop after
 
   translate(xPosition, yPosition); // move everything over by x, y
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
   fill('green');
-  ellipse(frogPos.x, frogPos.y, 50, 50);
+  ellipse(0, 0, 50, 50);
   pop();
 
     for(var i = 0; i < cars.length; i++){
@@ -68,8 +69,7 @@ function draw() {
  textSize(300);
  textAlign(CENTER);
  text("atk", width / 2, height / 2);
-frogPos.x = xPosition;
-frogPos.y = yPosition;
+
 
 }
 
