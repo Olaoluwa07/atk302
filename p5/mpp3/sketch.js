@@ -10,6 +10,7 @@ var myFont ;
 var sad ;
 var winn ;
 var ssng ;
+
 function setup() {
 
   createCanvas(800, 800);
@@ -72,6 +73,7 @@ function draw() {
       textFont(myFont);  // SETS the font
       textSize(100);
       text("LOSE", 300, 200);
+
       break;
 
     case 3:
@@ -80,6 +82,7 @@ function draw() {
       textFont(myFont);  // SETS the font
       textSize(100);
       text("WIN", 300, 200);
+
       break;
 
 
@@ -173,6 +176,7 @@ function checkForKeys() {
 function game() {
   //background(100);
   image(gok, width/2, height/2);
+
   //iterate
   for (var i = 0; i < cars.length; i++) {
     cars[i].display();
@@ -180,7 +184,9 @@ function game() {
     //test if car is close to frog
     if (cars[i].pos.dist(frogPos) < 50) {
       cars.splice(i, 1);
+      
       ssng.play() ;
+
     }
   }
 
