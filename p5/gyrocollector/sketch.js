@@ -59,9 +59,9 @@ function draw() {
  textSize(20);
  text("acceleration data:", 25, 125);
  textSize(15);
- //text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
- //text("y = " + y.toFixed(2), 25, 170);
- //text("z = " + z.toFixed(4), 25, 190);
+ text("x = " + x, 25, 150); // .toFixed means just show (x) decimal places
+ text("y = " + y, 25, 170);
+ text("z = " + z, 25, 190);
 
  // MORE DECORATIONS - write that pretty ATK type on top.
  fill('white');
