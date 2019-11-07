@@ -1,0 +1,45 @@
+body{
+background-image:url(paper.jpg);
+ background-color: black;
+ font-family: helvetica;
+ margin: auto;
+}
+
+
+
+
+}
+
+a{
+  font-family: Helvetica, sans-serif;
+  line-height: 20px;
+  color: black;
+  text-align: left;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+nav li{
+display: block;
+padding-left: 10px;
+margin-left: 20px;
+
+}
+
+.hd {
+  font-family: Helvetica, sans-serif;
+    color: yellow;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 5px;
+    padding-left: 50px;
+
+  }
+
+  header{
+    padding-top: 10px;
+    background-color: black;
+  }
