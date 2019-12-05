@@ -1,0 +1,13 @@
+#p2 {
+	float: right;
+}
+
+#p1 {
+	float: left;
+}
+
+body {
+	background-color: blue;
+	background-image: url(assets/crowd.jpg);
+	background-repeat: no-repeat;
+}

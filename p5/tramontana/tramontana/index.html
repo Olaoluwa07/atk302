@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../libs/p5.js"></script>
+    <script src="../libs/p5.dom.js"></script>
+    <script src="../libs/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <!-- import jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- import tramontana-->
+      <script src="lib/tramontana_min.js"></script>
+    <!-- create a global variable-->
+      <script>
+        var device1 = new tramontana();
+        var device2 = new tramontana();
+      </script>
+      	<link rel="stylesheet" type="text/css" href="./css.css">
+
+  </head>
+  <body>
+
+
+    <p id="p2">
+    <!-- OPEN SOCKET -->
+    <label>IPAddress P2:</label>
+    <input type="text" id="ipInput2" placeholder="put IP on app here"><br/>
+    <button onclick="device2.start($('#ipInput2').val(), function(e){
+if(e==undefined){
+//SUCCESS TRAMONTANA CONNECTED
+device2.makeVibrate();
+}
+});">start</button>
+
+    <!-- CHANGE device COLOR -->
+    <button onclick="console.log('change color');device2.setColor(Math.random(0,255),Math.random(0,255),Math.random(0,255),255
+    );">change color</button>
+    <button onclick="device2.subscribeAttitude($('#attitudeFrequency2').val()-0,function(ip,e){
+
+
+        $('#attitudeContentR2').html(e['r']);
+      });">subscribe attitude</button><br/>
+
+      roll:<span id="attitudeContentR2">unknown</span>
+    </p>
+
+    <p id="p1">
+    <!-- OPEN SOCKET -->
+    <label>IPAddress P1:</label>
+    <input type="text" id="ipInput1" placeholder="put IP on app here"><br/>
+    <button onclick="device1.start($('#ipInput1').val(), function(e){
+      $('button').removeAttr('disabled');
+if(e==undefined){
+//SUCCESS TRAMONTANA CONNECTED
+device1.makeVibrate();
+}
+});">start</button>
+
+    <!-- CHANGE device COLOR -->
+    <button onclick="console.log('change color');device1.setColor(Math.random(0,255),Math.random(0,255),Math.random(0,255),255
+    );">change color</button>
+
+    <button id="roll1" onclick="device1.subscribeAttitude($('#attitudeFrequency1').val()-0,function(ip,e){
+
+
+        $('#attitudeContentR1').html(e['r']);
+      });">subscribe attitude</button><br/>
+
+      roll:<span id="attitudeContentR1">unknown</span>
+    </p>
+
+
+
+
+  </body>
+
+</html>
