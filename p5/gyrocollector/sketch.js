@@ -8,7 +8,7 @@ var y = 0;
 var z = 0;
 function setup() {
   // put setup code here
-  createCanvas(800, 800);
+  createCanvas(400, 800);
   alpha = 0;
     beta = 0;
     gamma = 0;
