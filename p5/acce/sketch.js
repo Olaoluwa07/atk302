@@ -4,7 +4,7 @@ var xpos, ypos;
 function setup()
 {
   // set canvas size
-  createCanvas(400, 400);
+  createCanvas(400, 900);
 
   // default values
   xpos = 200;
