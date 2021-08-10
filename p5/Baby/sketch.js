@@ -4,14 +4,18 @@
 
 var value = 0;
 var mic, recorder, soundFile;
+let r, g, b;
 
 var state = 0; // mousePress will increment from Record, to Stop, to Play
 
 function setup() {
-  createCanvas(400,400);
-  background(255,0,0);
+  //createCanvas(400,400);
+  //background(255,0,0);
   fill(0);
-
+  createCanvas(displayWidth, displayHeight);
+    r = random(50, 255);
+    g = random(0, 200);
+    b = random(50, 255);
   // create an audio in
   mic = new p5.AudioIn();
 
