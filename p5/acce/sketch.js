@@ -16,7 +16,7 @@ function setup()
 function draw()
 {
   // set background color to white
-  background(255);
+  background(green);
 
 
   // add/subract xpos and ypos
