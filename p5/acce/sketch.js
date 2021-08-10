@@ -17,6 +17,7 @@ function draw()
 {
   // set background color to white
   background(255);
+  rect(25, 25, 50, 50);
 
   // add/subract xpos and ypos
   xpos = xpos + x;
