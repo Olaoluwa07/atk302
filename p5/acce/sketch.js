@@ -17,7 +17,7 @@ function draw()
 {
   // set background color to white
   background(255);
-  rect(25, 25, 50, 50);
+
 
   // add/subract xpos and ypos
   xpos = xpos + x;
@@ -30,7 +30,7 @@ function draw()
   if(ypos < 0) { ypos = 400; }
 
   // draw ellipse
-  fill(255, 0, 0);
+//  fill(255, 0, 0);
   ellipse(xpos, ypos, 25, 25);
 
   // display variables
