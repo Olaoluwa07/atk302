@@ -30,7 +30,7 @@ function draw()
   if(ypos < 0) { ypos = 400; }
 
   // draw ellipse
-  fill(255, 204, 0);
+  fill('white');
   ellipse(xpos, ypos, 25, 25);
 
   // display variables
