@@ -34,7 +34,7 @@ function draw()
   ellipse(xpos, ypos, 25, 25);
 
   // display variables
-  fill(255, 204, 0);
+  fill(51);
   noStroke();
   text("x: " + x, 25, 25);
   text("y: " + y, 25, 50);
